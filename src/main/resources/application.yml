@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Interview-Builder
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: sails@123
+  jpa:
+    database: POSTGRESQL
+    properties:
+        default_schema: ${db.schema}
+
+db:
+  schema: carnival
+
+app:
+  name: Sails Learning Carnival
+
+server:
+  servlet:
+    context-path: /learning-carnival
